@@ -24,7 +24,7 @@ the other.parameters entry under the package name, e.g.figures:
   gtag('js', new Date());
 
   gtag('config', 'UA-115082821-1');
-</script></head><body>
+</script><script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script></head><body>
     <a href="#container" class="visually-hidden-focusable">Skip to contents</a>
     
 
@@ -93,15 +93,15 @@ the other.parameters entry under the package name, e.g.figures:
     <p>You will generally not need to use this function unless you are handling
 custom plot output.</p>
 <p>Packages needing custom parameters should ask users to place them within
-the <code>other.parameters</code> entry under the package name, e.g.</p><pre><code>figures:
-  other.parameters:
-    rgl:
-      fig.asp: 1
-</code></pre>
+the <code>other.parameters</code> entry under the package name, e.g.</p><pre><code><span class="va">figures</span><span class="op">:</span>
+  <span class="va">other.parameters</span><span class="op">:</span>
+    <span class="va">rgl</span><span class="op">:</span>
+      <span class="va">fig.asp</span><span class="op">:</span> <span class="fl">1</span></code></pre>
 
     </div>
 
     <div class="ref-usage section level2 sourceCode">
+    <h2>Usage</h2>
     <pre class="sourceCode r"><code><span class="fu">fig_settings</span><span class="op">(</span><span class="op">)</span></code></pre>
     </div>
 
@@ -114,7 +114,9 @@ the <code>other.parameters</code> entry under the package name, e.g.</p><pre><co
     </div>
 
   </div>
-  
+  <div class="col-md-3" id="pkgdown-sidebar">
+    <nav id="toc"><h2>On this page</h2>
+    </nav></div>
 </div>
 
 
