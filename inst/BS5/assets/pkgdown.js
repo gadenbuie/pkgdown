@@ -11,7 +11,7 @@
 
     $('body').scrollspy({
       target: '#toc',
-      offset: 56 // headroom height
+      offset: 57 // headroom height
     });
 
     // Activate popovers
