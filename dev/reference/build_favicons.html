@@ -15,14 +15,16 @@ with different sizes, as needed for modern web usage."><meta property="og:image"
 
   gtag('config', 'UA-115082821-1');
 </script><script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script></head><body>
-    <a href="#container" class="visually-hidden-focusable">Skip to contents</a>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
     <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
     <a class="navbar-brand me-2" href="../index.html">pkgdown</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.9000.9000.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.0.1.9000</small>
 
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,7 +39,7 @@ with different sizes, as needed for modern web usage."><meta property="og:image"
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/customise.html">Styling your site</a>
+    <a class="dropdown-item" href="../articles/customise.html">Customise your site</a>
     <a class="dropdown-item" href="../articles/linking.html">Auto-linking</a>
     <a class="dropdown-item" href="../articles/search.html">Search</a>
     <a class="dropdown-item" href="../articles/metadata.html">Metadata</a>
@@ -69,11 +71,12 @@ with different sizes, as needed for modern web usage."><meta property="og:image"
   </a>
 </li>
       </ul></div>
+
+    
   </div>
-</nav><div class="container template-reference-topic" id="container">
+</nav><div class="container template-reference-topic">
 <div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header">
+  <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Create favicons from package logo</h1>
       <small class="dont-index">Source: <a href="https://github.com/r-lib/pkgdown/blob/HEAD/R/build-favicons.R" class="external-link"><code>R/build-favicons.R</code></a></small>
       <div class="d-none name"><code>build_favicons.Rd</code></div>
@@ -86,14 +89,13 @@ with different sizes, as needed for modern web usage."><meta property="og:image"
 with different sizes, as needed for modern web usage.</p>
     </div>
 
-    <div class="ref-usage section level2 sourceCode">
-    <h2>Usage</h2>
-    <pre class="sourceCode r"><code><span class="fu">build_favicons</span><span class="op">(</span>pkg <span class="op">=</span> <span class="st">"."</span>, overwrite <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
+    <div class="section level2">
+    <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">build_favicons</span><span class="op">(</span>pkg <span class="op">=</span> <span class="st">"."</span>, overwrite <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
 
-<span class="fu">build_favicon</span><span class="op">(</span><span class="va">pkg</span>, <span class="va">overwrite</span><span class="op">)</span></code></pre>
+<span class="fu">build_favicon</span><span class="op">(</span><span class="va">pkg</span>, <span class="va">overwrite</span><span class="op">)</span></code></pre></div>
     </div>
 
-    <div id="ref-sections">
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>pkg</dt>
@@ -109,13 +111,9 @@ the website is rebuilt.</p>
 <p>Once complete, you should add <code>pkgdown/</code> to <code>.Rbuildignore </code> to avoid a NOTE
 during package checking.</p>
     </div>
-    </div>
 
-  </div>
-  <div class="col-md-3" id="pkgdown-sidebar">
-    <nav id="toc"><h2>On this page</h2>
-    </nav></div>
-</div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
@@ -123,7 +121,7 @@ during package checking.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.9000.9000.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 2.0.1.9000.</p>
 </div>
 
     </footer></div>

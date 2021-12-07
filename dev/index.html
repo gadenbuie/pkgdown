@@ -39,14 +39,16 @@
 </script><script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
-    <a href="#container" class="visually-hidden-focusable">Skip to contents</a>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
     <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
     <a class="navbar-brand me-2" href="index.html">pkgdown</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.9000.9000.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.0.1.9000</small>
 
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,7 +64,7 @@
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="articles/customise.html">Styling your site</a>
+    <a class="dropdown-item" href="articles/customise.html">Customise your site</a>
     <a class="dropdown-item" href="articles/linking.html">Auto-linking</a>
     <a class="dropdown-item" href="articles/search.html">Search</a>
     <a class="dropdown-item" href="articles/metadata.html">Metadata</a>
@@ -98,11 +100,12 @@
 </li>
       </ul>
 </div>
+
+    
   </div>
-</nav><div class="container template-home" id="container">
+</nav><div class="container template-home">
 <div class="row">
-  <div class="contents col-md-9">
-<div class="section level1">
+  <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
 <img src="logo.png" class="logo" alt=""><h1 id="pkgdown-">pkgdown <a class="anchor" aria-label="anchor" href="#pkgdown-"></a>
 </h1>
@@ -147,7 +150,7 @@
 <ul>
 <li><p><a href="http://mc-stan.org/bayesplot/index.html" class="external-link">bayesplot</a> (<a href="https://github.com/stan-dev/bayesplot/tree/gh-pages" class="external-link">source</a>): plotting functions for posterior analysis, model checking, and MCMC diagnostics.</p></li>
 <li><p><a href="https://rnabioco.github.io/valr/" class="external-link">valr</a> (<a href="https://github.com/rnabioco/valr" class="external-link">source</a>): read and manipulate genome intervals and signals.</p></li>
-<li><p><a href="http://jranke.github.io/mkin/" class="external-link">mkin</a> (<a href="https://github.com/jranke/mkin" class="external-link">source</a>): calculation routines based on the FOCUS Kinetics Report</p></li>
+<li><p><a href="https://pkgdown.jrwb.de/mkin/" class="external-link">mkin</a> (<a href="https://github.com/jranke/mkin" class="external-link">source</a>): calculation routines based on the FOCUS Kinetics Report</p></li>
 <li><p><a href="http://renozao.github.io/NMF/master/index.html" class="external-link">NMF</a> (<a href="https://github.com/renozao/NMF" class="external-link">source</a>): a framework to perform non-negative matrix factorization (NMF).</p></li>
 </ul>
 <p>Comparing the source and output of these sites is a great way to learn new pkgdown techniques.</p>
@@ -158,10 +161,7 @@
 <p>Please note that this project is released with a <a href="https://pkgdown.r-lib.org/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
 </div>
 </div>
-  </div>
-
-  <div class="col-md-3" id="pkgdown-sidebar">
-<div class="links">
+  </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li><a href="https://cloud.r-project.org/package=pkgdown" class="external-link">View on CRAN</a></li>
@@ -186,6 +186,13 @@
 </ul>
 </div>
 
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing pkgdown</a></li>
+</ul>
+</div>
+
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
@@ -203,13 +210,12 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.tidyverse.org/lifecycle/#maturing" class="external-link"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a></li>
 <li><a href="https://github.com/r-lib/pkgdown/actions" class="external-link pkgdown-devel"><img src="https://github.com/r-lib/pkgdown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://codecov.io/gh/r-lib/pkgdown?branch=main" class="external-link"><img src="https://codecov.io/gh/r-lib/pkgdown/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://app.codecov.io/gh/r-lib/pkgdown?branch=main" class="external-link"><img src="https://codecov.io/gh/r-lib/pkgdown/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 
-  </div>
+  </aside>
 </div>
 
 
@@ -220,7 +226,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.9000.9000.9000.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 2.0.1.9000.</p>
 </div>
 
     </footer>

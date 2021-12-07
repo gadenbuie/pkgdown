@@ -31,14 +31,16 @@ iterating when experimenting with site styles."><meta property="og:image" conten
 
   gtag('config', 'UA-115082821-1');
 </script><script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script></head><body>
-    <a href="#container" class="visually-hidden-focusable">Skip to contents</a>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
     <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
     <a class="navbar-brand me-2" href="../index.html">pkgdown</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.9000.9000.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.0.1.9000</small>
 
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,7 +55,7 @@ iterating when experimenting with site styles."><meta property="og:image" conten
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/customise.html">Styling your site</a>
+    <a class="dropdown-item" href="../articles/customise.html">Customise your site</a>
     <a class="dropdown-item" href="../articles/linking.html">Auto-linking</a>
     <a class="dropdown-item" href="../articles/search.html">Search</a>
     <a class="dropdown-item" href="../articles/metadata.html">Metadata</a>
@@ -85,11 +87,12 @@ iterating when experimenting with site styles."><meta property="og:image" conten
   </a>
 </li>
       </ul></div>
+
+    
   </div>
-</nav><div class="container template-reference-topic" id="container">
+</nav><div class="container template-reference-topic">
 <div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header">
+  <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Build home section</h1>
       <small class="dont-index">Source: <a href="https://github.com/r-lib/pkgdown/blob/HEAD/R/build-home-index.R" class="external-link"><code>R/build-home-index.R</code></a>, <a href="https://github.com/r-lib/pkgdown/blob/HEAD/R/build-home.R" class="external-link"><code>R/build-home.R</code></a></small>
       <div class="d-none name"><code>build_home.Rd</code></div>
@@ -107,14 +110,13 @@ including:</p><ul><li><p>The home page</p></li>
 iterating when experimenting with site styles.</p>
     </div>
 
-    <div class="ref-usage section level2 sourceCode">
-    <h2>Usage</h2>
-    <pre class="sourceCode r"><code><span class="fu">build_home_index</span><span class="op">(</span>pkg <span class="op">=</span> <span class="st">"."</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+    <div class="section level2">
+    <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">build_home_index</span><span class="op">(</span>pkg <span class="op">=</span> <span class="st">"."</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
 
-<span class="fu">build_home</span><span class="op">(</span>pkg <span class="op">=</span> <span class="st">"."</span>, override <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span>, preview <span class="op">=</span> <span class="cn">NA</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre>
+<span class="fu">build_home</span><span class="op">(</span>pkg <span class="op">=</span> <span class="st">"."</span>, override <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">)</span>, preview <span class="op">=</span> <span class="cn">NA</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
     </div>
 
-    <div id="ref-sections">
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>pkg</dt>
@@ -286,7 +288,7 @@ This organisation makes it easy to mix and match the pkgdown defaults with your 
 <p>This is the default structure:</p><div class="sourceCode yaml"><pre><code><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">home</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="at">    </span><span class="fu">structure</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">links</span><span class="kw">,</span><span class="at"> license</span><span class="kw">,</span><span class="at"> community</span><span class="kw">,</span><span class="at"> citation</span><span class="kw">,</span><span class="at"> authors</span><span class="kw">,</span><span class="at"> dev</span><span class="kw">]</span></span></code></pre><p></p></div>
-<p>These are drawn from seven built-in components:</p><ul><li><p><code>links</code>: automated links generated from <code>URL</code> and <code>BugReports</code> <code>DESCRIPTION</code> fields plus manual links from the <code>home.links</code> field:</p><div class="sourceCode yaml"><pre><code><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">home</span><span class="kw">:</span></span>
+<p>These are drawn from seven built-in components:</p><ul><li><p><code>links</code>: automated links generated from <code>URL</code> and <code>BugReports</code> fields from <code>DESCRIPTION</code> plus manual links from the <code>home.links</code> field:</p><div class="sourceCode yaml"><pre><code><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">home</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">links</span><span class="kw">:</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Link text</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://website.com</span></span>
@@ -294,7 +296,7 @@ This organisation makes it easy to mix and match the pkgdown defaults with your 
 <span id="cb1-6"><a href="#cb1-6"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> /roadmap.html</span></span></code></pre><p></p></div></li>
 <li><p><code>license</code>: Licensing information if <code>LICENSE</code>/<code>LICENCE</code> or <code>LICENSE.md</code>/<code>LICENCE.md</code> files are present.</p></li>
 <li><p><code>community</code>: links to to <code>.github/CONTRIBUTING.md</code>, <code>.github/CODE_OF_CONDUCT.md</code>, etc.</p></li>
-<li><p><code>citation</code>: link to the package citation if it exists.</p></li>
+<li><p><code>citation</code>: link to package citation information. Uses either <code>inst/CITATION</code> or, if absent, information from the <code>DESCRIPTION</code>.</p></li>
 <li><p><code>authors</code>: selected authors from the <code>DESCRIPTION</code>.</p></li>
 <li><p><code>dev</code>: development status badges found in <code>README.md</code>/<code>index.md</code>.</p></li>
 <li><p><code>toc</code>: a table of contents for the README (not shown by default).</p></li>
@@ -311,13 +313,9 @@ This organisation makes it easy to mix and match the pkgdown defaults with your 
 <p>Or completely remove it:</p><div class="sourceCode yaml"><pre><code><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">home</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span><span class="at"> </span><span class="ch">FALSE</span></span></code></pre><p></p></div>
     </div>
-    </div>
 
-  </div>
-  <div class="col-md-3" id="pkgdown-sidebar">
-    <nav id="toc"><h2>On this page</h2>
-    </nav></div>
-</div>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">
@@ -325,7 +323,7 @@ This organisation makes it easy to mix and match the pkgdown defaults with your 
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.9000.9000.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 2.0.1.9000.</p>
 </div>
 
     </footer></div>

@@ -35,14 +35,16 @@
 </script><script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
-    <a href="#container" class="visually-hidden-focusable">Skip to contents</a>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
     <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
     <a class="navbar-brand me-2" href="../index.html">pkgdown</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">1.9000.9000.9000</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.0.1.9000</small>
 
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,7 +60,7 @@
 <li class="active nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/customise.html">Styling your site</a>
+    <a class="dropdown-item" href="../articles/customise.html">Customise your site</a>
     <a class="dropdown-item" href="../articles/linking.html">Auto-linking</a>
     <a class="dropdown-item" href="../articles/search.html">Search</a>
     <a class="dropdown-item" href="../articles/metadata.html">Metadata</a>
@@ -94,11 +96,12 @@
 </li>
       </ul>
 </div>
+
+    
   </div>
-</nav><div class="container template-article" id="container">
+</nav><div class="container template-article">
 <script src="metadata_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header">
+  <main id="main"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Metadata</h1>
             
       
@@ -108,7 +111,7 @@
 
     
     
-<p>Package authors can customize the metadata used by Twitter and the <a href="https://ogp.me/" class="external-link">Open Graph protocol</a> for rich social media cards. In addition to specifying an alternate description for the package and any individual articles, you may also choose the preview image shown and the style of card used on Twitter.</p>
+<p>Package authors can customize the metadata used by Twitter and the <a href="https://ogp.me/" class="external-link">Open Graph protocol</a> for rich social media cards. In addition to specifying an alternate description for the package and any individual articles, you may also choose the preview image shown and the style of the card used on Twitter.</p>
 <p>You can preview and validate the appearance of the social media cards with online tools:</p>
 <ul>
 <li><a href="https://cards-dev.twitter.com/validator" class="external-link">Twitter Card Validator</a></li>
@@ -152,7 +155,7 @@
 <ul>
 <li><p><code>creator</code>: Typically, the Twitter handle of the author of the package or article.</p></li>
 <li><p><code>site</code>: The Twitter handle of the organization affiliated with the package author or sponsoring the package development.</p></li>
-<li><p>If only one of <code>creator</code> or <code>site</code> are included, the provided value will be used for both fields.</p></li>
+<li><p>If only one of <code>creator</code> or <code>site</code> is included, the provided value will be used for both fields.</p></li>
 <li><p><code>card</code>: The <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards" class="external-link">style of social media card</a> that Twitter will display. For pkgdown sites, the most relevant options are <code>summary_large_image</code>, featuring a large image over the page title and description, or <code>summary</code>, featuring a small square image inline and to the left of the page title and description.</p></li>
 </ul>
 </li>
@@ -184,12 +187,8 @@
 </ul>
 <p>In articles, the <code>opengraph</code> section works in the same way as the site-wide <code>template: opengraph</code> settings, but is only applied to the article or vignette. This allows you to specify social media card preview images for individual articles, or to associate an article with a particular Twitter account. If not specified, the <code>opengraph</code> settings from the site-wide configuration are used.</p>
 </div>
-  </div>
-  <div class="col-md-3" id="pkgdown-sidebar">
-    <nav id="toc"><h2>On this page</h2>
-    </nav>
-</div>
-  
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
@@ -201,7 +200,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.9000.9000.9000.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 2.0.1.9000.</p>
 </div>
 
     </footer>
