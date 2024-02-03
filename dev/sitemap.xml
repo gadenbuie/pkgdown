@@ -16,6 +16,9 @@
     <loc>https://pkgdown.r-lib.org/dev/articles/customise.html</loc>
   </url>
   <url>
+    <loc>https://pkgdown.r-lib.org/dev/articles/how-to-update-released-site.html</loc>
+  </url>
+  <url>
     <loc>https://pkgdown.r-lib.org/dev/articles/index.html</loc>
   </url>
   <url>
@@ -85,6 +88,9 @@
     <loc>https://pkgdown.r-lib.org/dev/reference/build_tutorials.html</loc>
   </url>
   <url>
+    <loc>https://pkgdown.r-lib.org/dev/reference/check_pkgdown.html</loc>
+  </url>
+  <url>
     <loc>https://pkgdown.r-lib.org/dev/reference/clean_site.html</loc>
   </url>
   <url>
@@ -116,6 +122,9 @@
   </url>
   <url>
     <loc>https://pkgdown.r-lib.org/dev/reference/pkgdown_sitrep.html</loc>
+  </url>
+  <url>
+    <loc>https://pkgdown.r-lib.org/dev/reference/preview_page.html</loc>
   </url>
   <url>
     <loc>https://pkgdown.r-lib.org/dev/reference/preview_site.html</loc>
