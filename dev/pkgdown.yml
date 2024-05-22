@@ -2,19 +2,20 @@ pandoc: 3.1.11
 pkgdown: 2.0.9.9000
 pkgdown_sha: ~
 articles:
+  accessibility: accessibility.html
   customise: customise.html
   how-to-update-released-site: how-to-update-released-site.html
-  jss: test/jss.pdf
+  test/jss: test/jss.pdf
   linking: linking.html
-  long-toc: test/long-toc.html
+  test/long-toc: test/long-toc.html
   metadata: metadata.html
-  pdf: test/pdf.pdf
+  test/pdf: test/pdf.pdf
   pkgdown: pkgdown.html
-  rendering: test/rendering.html
+  test/rendering: test/rendering.html
   search: search.html
-  short: test/short.html
-  widgets: test/widgets.html
-last_built: 2024-04-24T01:15Z
+  test/short: test/short.html
+  test/widgets: test/widgets.html
+last_built: 2024-05-22T18:43Z
 urls:
   reference: https://pkgdown.r-lib.org/reference
   article: https://pkgdown.r-lib.org/articles
