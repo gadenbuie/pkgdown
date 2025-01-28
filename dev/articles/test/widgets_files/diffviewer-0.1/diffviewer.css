@@ -104,9 +104,13 @@
     padding: 0;
 }
 
-/* Need this for scrolling to work properly with flexbox. */
+
 .d2h-wrapper {
+    /* Need this for scrolling to work properly with flexbox. */
     position: relative;
+    /* Need for dark mode */
+    background-color: #fff;
+    color: #000;
 }
 
 
