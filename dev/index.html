@@ -5,32 +5,38 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Generate an attractive and useful website from a source package. pkgdown converts your documentation, vignettes, README, and more to HTML making it easy to share information about your package online.">
 <title>Build websites for R packages • pkgdown</title>
-<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
-<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- favicons --><link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" type="”image/svg+xml”" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" sizes="any" href="favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+<script src="lightswitch.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Build websites for R packages">
+<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><script src="deps/MathJax-3.2.2/tex-chtml.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Build websites for R packages">
+<meta name="description" content="Generate an attractive and useful website from a source package. pkgdown converts your documentation, vignettes, README, and more to HTML making it easy to share information about your package online.">
 <meta property="og:description" content="Generate an attractive and useful website from a source package. pkgdown converts your documentation, vignettes, README, and more to HTML making it easy to share information about your package online.">
 <meta property="og:image" content="https://pkgdown.r-lib.org/logo.png">
 <meta name="robots" content="noindex">
-<!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="pkgdown.r-lib.org,all.tidyverse.org" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
+
+
     <nav class="navbar navbar-expand-lg fixed-top " aria-label="Site navigation"><div class="container">
+
     <a class="navbar-brand me-2" href="index.html">pkgdown</a>
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.0.9.9000</small>
+
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">2.1.1.9000</small>
+
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="articles/pkgdown.html">Get started</a></li>
@@ -39,6 +45,8 @@
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="articles/customise.html">Customise your site</a></li>
+    <li><a class="dropdown-item" href="articles/quarto.html">quarto vignettes</a></li>
+    <li><a class="dropdown-item" href="articles/translations.html">Translations</a></li>
     <li><a class="dropdown-item" href="articles/accessibility.html">Accessibility</a></li>
     <li><a class="dropdown-item" href="articles/linking.html">Auto-linking</a></li>
     <li><a class="dropdown-item" href="articles/metadata.html">Metadata</a></li>
@@ -50,6 +58,7 @@
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-news" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">News</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-news">
 <li><h6 class="dropdown-header" data-toc-skip>Releases</h6></li>
+    <li><a class="external-link dropdown-item" href="https://www.tidyverse.org/blog/2024/07/pkgdown-2-1-0/">Version 2.1.0</a></li>
     <li><a class="external-link dropdown-item" href="https://www.tidyverse.org/blog/2021/12/pkgdown-2-0-0/">Version 2.0.0</a></li>
     <li><a class="external-link dropdown-item" href="https://www.tidyverse.org/blog/2020/09/pkgdown-1-6-0/">Version 1.6.0</a></li>
     <li><a class="external-link dropdown-item" href="https://www.tidyverse.org/blog/2020/03/pkgdown-1-5-0/">Version 1.5.0</a></li>
@@ -77,6 +86,8 @@
 </li>
       </ul>
 </div>
+
+
   </div>
 </nav><div class="container template-home">
 <div class="row">
@@ -104,12 +115,12 @@
 </h2>
 <p>Get started with <a href="https://usethis.r-lib.org/" class="external-link">usethis</a>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># Run once to configure your package to use pkgdown</span></span>
-<span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_pkgdown.html" class="external-link">use_pkgdown</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p>Then use pkgdown to build your website:</p>
+<code class="sourceCode R"><span><span class="co"># Run once to configure your package to use and deploy pkgdown</span></span>
+<span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_pkgdown.html" class="external-link">use_pkgdown_github_pages</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pkgdown</span><span class="fu">::</span><span class="fu"><a href="reference/build_site.html">build_site</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p>This generates a <code>docs/</code> directory containing a website. Your <code>README.md</code> becomes the homepage, documentation in <code>man/</code> generates a function reference, and vignettes will be rendered into <code>articles/</code>. Read <code><a href="articles/pkgdown.html">vignette("pkgdown")</a></code> for more details, and to learn how to deploy your site to GitHub pages.</p>
+<code class="sourceCode R"><span><span class="co"># Preview your site locally before publishing</span></span>
+<span><span class="fu">pkgdown</span><span class="fu">::</span><span class="fu"><a href="reference/build_site.html">build_site</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<p>This adds the necessary components and sets up GitHub Actions<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content='&lt;p&gt;If you don’t use GitHub, you can use &lt;code&gt;&lt;a href="https://usethis.r-lib.org/reference/use_pkgdown.html" class="external-link"&gt;usethis::use_pkgdown()&lt;/a&gt;&lt;/code&gt; + &lt;code&gt;&lt;a href="reference/build_site.html"&gt;pkgdown::build_site()&lt;/a&gt;&lt;/code&gt; to create a website.&lt;/p&gt;'><sup>1</sup></a> for automatic site building when deploying. Your <code>README.md</code> becomes the homepage, documentation in <code>man/</code> generates a function reference, and vignettes will be rendered into <code>articles/</code>.</p>
 <div class="section level3">
 <h3 id="pkgdown-200-and-bootstrap-5">pkgdown 2.0.0 and Bootstrap 5<a class="anchor" aria-label="anchor" href="#pkgdown-200-and-bootstrap-5"></a>
 </h3>
@@ -122,12 +133,13 @@
 <div class="section level2">
 <h2 id="in-the-wild">In the wild<a class="anchor" aria-label="anchor" href="#in-the-wild"></a>
 </h2>
-<p>At last count, pkgdown is used <a href="https://github.com/search?q=path%3A_pkgdown.yml+language%3AYAML&amp;type=code&amp;l=YAML" class="external-link">by over 11,000 packages</a>. Here are a few examples created by contributors to pkgdown:</p>
+<p>At last count, pkgdown is used <a href="https://github.com/search?q=path%3A_pkgdown.yml+language%3AYAML&amp;type=code&amp;l=YAML" class="external-link">by over 12,000 packages</a>. Here are a few examples:</p>
 <ul>
 <li><p><a href="http://mc-stan.org/bayesplot/index.html" class="external-link">bayesplot</a> (<a href="https://github.com/stan-dev/bayesplot/tree/gh-pages" class="external-link">source</a>): plotting functions for posterior analysis, model checking, and MCMC diagnostics.</p></li>
 <li><p><a href="https://rnabioco.github.io/valr/" class="external-link">valr</a> (<a href="https://github.com/rnabioco/valr" class="external-link">source</a>): read and manipulate genome intervals and signals.</p></li>
 <li><p><a href="https://pkgdown.jrwb.de/mkin/" class="external-link">mkin</a> (<a href="https://github.com/jranke/mkin" class="external-link">source</a>): calculation routines based on the FOCUS Kinetics Report</p></li>
 <li><p><a href="http://renozao.github.io/NMF/master/index.html" class="external-link">NMF</a> (<a href="https://github.com/renozao/NMF" class="external-link">source</a>): a framework to perform non-negative matrix factorization (NMF).</p></li>
+<li><p><a href="https://github.com/search?q=path%3A%22_pkgdown.yml%22+AND+%28org%3Atidyverse+OR+org%3Ar-lib%29&amp;type=code" class="external-link">tidyverse and r-lib packages source</a></p></li>
 </ul>
 <p>Comparing the source and output of these sites is a great way to learn new pkgdown techniques.</p>
 </div>
@@ -137,6 +149,8 @@
 <p>Please note that this project is released with a <a href="https://pkgdown.r-lib.org/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
 </div>
 </div>
+
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -145,6 +159,7 @@
 <li><a href="https://github.com/r-lib/pkgdown/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
@@ -152,6 +167,7 @@
 <li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
 <div class="community">
 <h2 data-toc-skip>Community</h2>
 <ul class="list-unstyled">
@@ -159,41 +175,57 @@
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
 </ul>
 </div>
+
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
 <li><a href="authors.html#citation">Citing pkgdown</a></li>
 </ul>
 </div>
+
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>
-<a href="http://hadley.nz" class="external-link">Hadley Wickham</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4757-117X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<a href="https://hadley.nz" class="external-link">Hadley Wickham</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4757-117X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
 <a href="https://hesselberthlab.org" class="external-link">Jay Hesselberth</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-6299-179X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
 <a href="https://masalmon.eu" class="external-link">Maëlle Salmon</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-2815-0399" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Olivier Roy <br><small class="roles"> Author </small>  </li>
 <li>
-<a href="https://www.posit.co" class="external-link"><img src="https://www.tidyverse.org/posit-logo.svg" alt="Posit" width="62" height="16" style="margin-bottom: 3px;"></a> <br><small class="roles"> Copyright holder, funder </small>  </li>
+<a href="https://salim.space" class="external-link">Salim Brüggemann</a> <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-5329-5987" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>
+<a href="https://posit.co" class="external-link">Posit Software, PBC</a> <br><small class="roles"> Copyright holder, funder </small>  </li>
 </ul>
 </div>
+
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/r-lib/pkgdown/actions" class="external-link pkgdown-devel"><img src="https://github.com/r-lib/pkgdown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://github.com/r-lib/pkgdown/actions/workflows/R-CMD-check.yaml" class="external-link pkgdown-devel"><img src="https://github.com/r-lib/pkgdown/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://app.codecov.io/gh/r-lib/pkgdown?branch=main" class="external-link"><img src="https://codecov.io/gh/r-lib/pkgdown/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
+
   </aside>
 </div>
+
+
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by <a href="http://hadley.nz" class="external-link">Hadley Wickham</a>, <a href="https://hesselberthlab.org" class="external-link">Jay Hesselberth</a>, <a href="https://masalmon.eu" class="external-link">Maëlle Salmon</a>, <a href="https://www.posit.co" class="external-link"><img src="https://www.tidyverse.org/posit-logo.svg" alt="Posit" width="62" height="16" style="margin-bottom: 3px;"></a>.</p>
+  <p>Developed by <a href="https://hadley.nz" class="external-link">Hadley Wickham</a>, <a href="https://hesselberthlab.org" class="external-link">Jay Hesselberth</a>, <a href="https://masalmon.eu" class="external-link">Maëlle Salmon</a>, Olivier Roy, <a href="https://salim.space" class="external-link">Salim Brüggemann</a>, <a href="https://posit.co" class="external-link">Posit Software, PBC</a>.</p>
 </div>
+
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 2.0.9.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 2.1.1.9000.</p>
 </div>
+
     </footer>
 </div>
+
+
+
+
+
   </body>
 </html>
